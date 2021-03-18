@@ -2,6 +2,7 @@
 TCP client and server in C and Python   
 
 **Server Specification**
+
 • Each server program should listen on a socket, wait for a client to connect, receive a
 message from the client, print the message to stdout, and then wait for the next client
 indefinitely.
@@ -24,6 +25,7 @@ handling client connections should not cause the server to exit after handling t
 all others should.
 
 **Client Specification**
+
 • Each client program should contact a server, read a message from stdin, send the
 message, and exit.
 
