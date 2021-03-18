@@ -1,13 +1,12 @@
 # Sockets
 TCP client and server in C and Python   
 
-Server Specification
+**Server Specification**
 • Each server program should listen on a socket, wait for a client to connect, receive a
 message from the client, print the message to stdout, and then wait for the next client
 indefinitely.
 • Each server should take one command-line argument: the port number to listen on for
 client connections.
-5
 • Each server should accept and process client communications in an infinite loop,
 allowing multiple clients to send messages to the same server. The server should only
 exit in response to an external signal (e.g., SIGINT from pressing ctrl-c).
@@ -19,7 +18,8 @@ assignment.
 programming library functions (see specifics for each language below). Errors related to
 handling client connections should not cause the server to exit after handling the error;
 all others should.
-Client Specification
+
+**Client Specification**
 • Each client program should contact a server, read a message from stdin, send the
 message, and exit.
 • Each client should read and send the message exactly as it appears in stdin until
